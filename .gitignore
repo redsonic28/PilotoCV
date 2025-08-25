@@ -1,0 +1,27 @@
+# Entornos virtuales
+venv/
+.venv/
+PilotoCV/
+PilotoCV./
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpeta de imágenes de usuarios (mantén solo el .gitkeep)
+imagenes/*
+!imagenes/.gitkeep
