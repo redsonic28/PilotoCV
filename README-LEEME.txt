@@ -107,7 +107,8 @@ requeriments.txt
 -MySQL activo para sincronizar la base de datos reconocimiento_facial
 -el entorno virtual preparado con las respectivas librerias para que ejecute lo pertinente
 
-Bueno ahora tienes que acceder a un navegador y escribir "localhost", si tu apache esta activo este te permitira entrar a un indexado de carpetas de esas busca la carpeta llamada "proyecto Piloto CV"
+Bueno lo primero que debes hacer es entrar en xampp,activar apache y mySQl 
+luego tienes que acceder a un navegador y escribir "localhost", si tu apache esta activo este te permitira entrar a un indexado de carpetas de esas busca la carpeta llamada "PilotoCV-Main"
 dentro de la carpeta presiona en el archivo registro.php,esto te accedera al formulario,ahi es donde debes ingresar los datos con la imagen 
 
 entra a la base de datos en phpmyadmin por medio de: http://localhost/phpmyadmin/
@@ -147,8 +148,8 @@ Configuración de la Base de Datos
  entra al aplicativo XAMPP,activa tanto apache como mySQL ahora:
 
 1. Abre phpMyAdmin desde tu XAMPP (http://localhost/phpmyadmin).
-
-2. Crea una base de datos con el nombre: reconocimiento_facial
+ 
+2. accede a phpmyadmin con "http://localhost/phpmyadmin/"  y Crea una base de datos con el nombre: reconocimiento_facial
 3. Ve a la pestaña Importar y selecciona el archivo "reconocimiento_facial.sql" incluido en este repositorio.
 4. Haz clic en "Import" y las tablas se crearán automáticamente.
 
@@ -164,7 +165,10 @@ En PCs con GPU limitada puede experimentar ralentizaciones
 Autor: Daniel Felipe Chavez
 Versión: Prototipo v1.0.2 (2025)
 
-<<<<<<<< English Version>>>>>>>>>
+que la fuerza del teclado te acompañe :)
+
+
+<<<<<<<<<<<<<<< English Version>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 Facial Recognition System – Prototype
 
@@ -252,8 +256,7 @@ The form will upload the reference photos there.
 The approximate folder architecture should look like this:
 ---------------------------
 Available folders:
-
-images
+imagenes
 PilotoCV
 ----------------
 Individual files:
@@ -264,6 +267,31 @@ reconocimiento_facial.sql
 registro.php
 requirements.txt
 ----------------
+**************************************************************************
+Instructions for use:
+*********************************************************************************
+- To use the program correctly, you must have Apache enabled to access the form where the information is uploaded (registro.php).
+- MySQL enabled to synchronize the reconocimiento_facial database.
+- The virtual environment prepared with the respective libraries to run the relevant files.
+
+Well, the first thing you should do is enter XAMPP, activate Apache and MySQL.
+Then you have to access a browser and type "localhost." If your Apache is enabled, it will allow you to access an index of folders. Look for the folder called "PilotoCV-Main."
+Inside the folder, click on the registration.php file. This will access the form. This is where you should enter the data with the image.
+
+Enter the database in phpmyadmin via: http://localhost/phpmyadmin/
+
+Search for the reconocimiento_facial database and check the user table to see if the form data has been uploaded.
+
+Once this is validated, in your command box where the virtual environment is active, if it isn't, access the folder and type this:
+(PilotoCV\Scripts\activate)
+
+Once you have the (PilotoCV) icon active, enter this script to run the Python file ProyectoVer1.py or, failing that, enter this script:
+python .\ProyectoVer1.py
+
+Be patient while it executes each process. Once the program has loaded, a Python tab will appear. It will access your connected camera and search for matches with the image you uploaded. If it matches the facial patterns in the photo, it will be reflected on the camera.
+
+And that's it! That's the prototype dynamics!
+
 ****************************************************************************
 (added): XAMPP installation instructions with direct cloning of the repository
 ********************************************************************************
@@ -300,3 +328,6 @@ You may experience slowdowns on PCs with limited GPUs.
 Author: Daniel Felipe Chavez
 Version: Prototype v1.0.2 (2025)
 
+
+
+May the force of the keyboard be with you :)
