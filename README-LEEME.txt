@@ -61,15 +61,15 @@ para validar que esta activo deberia salirte en la direccion un icono asi: (Pilo
 D) Instalar dependencias en PilotoCV
 
 
-una vez activo el entorno deberias poder escribir este  comando:
+una vez activo el entorno deberias poder escribir este  comando y ten paciencia con la instalacion:
 ..................................................................................................................
-pip install opencv-python mediapipe deepface mysql-connector-python
+pip install opencv-python mediapipe deepface mysql-connector-python tf-keras
 ..................................................................................................................
 
 E)Clonar el proyecto en htdocs de XAMPP
 para que a la hora de activar el servidor de xampp pueda reconocer la union de la base de datos con la pagina
 ............................................................
-C:\xampp\htdocs\ProyectoPilotoCV\
+C:\xampp\htdocs  y deberia quedar la direccion asi: C:\xampp\htdocs\PilotoCV-main
 ............................................................
 
 E)Base de datos
@@ -93,10 +93,12 @@ imagenes
 PilotoCV
 ----------------
 archivos individuales:
-
+.gitignore
 ProyectoVer1.py
 README-LEEME.txt
+reconocimiento_facial.sql
 registro.php
+requeriments.txt
 ----------------
 **************************************************************************
  instrucciones de uso:
@@ -123,7 +125,7 @@ ten paciencia en que vaya ejecutando cada proceso y una vez que el programa haya
 y listo eso seria la dinamica del prototipo!
 
 *************************************************************************
-instrucciones de instalacion por xampp
+ (añadido):instrucciones de instalacion por xampp con clonacion directa del repositorio
 **************************************************************************
 descripcion:
 Yo personalmente diseñe todo esto en el entorno xampp asi que por comodidad pueden usar esta guia para ejecutarlo tal cual como lo hize yo
@@ -162,7 +164,7 @@ En PCs con GPU limitada puede experimentar ralentizaciones
 Autor: Daniel Felipe Chavez
 Versión: Prototipo v1.0.2 (2025)
 
-
+<<<<<<<< English Version>>>>>>>>>
 
 Facial Recognition System – Prototype
 
@@ -225,13 +227,13 @@ D) Install dependencies in PilotoCV
 
 Once the environment is active, you should be able to type this command:
 ................................................................................................................
-pip install opencv-python mediapipe deepface mysql-connector-python
+pip install opencv-python mediapipe deepface mysql-connector-python tf-keras
 ................................................................................................................
 
 E) Clone the project in XAMPP htdocs
 so that when you activate the XAMPP server, it can recognize the database connection with the page.
 ................................................................
-C:\xampp\htdocs\ProjectPilotoCV\
+C:\xampp\htdocs and the address should look like this: C:\xampp\htdocs\PilotoCV-main
 ..............................................................
 
 E) Database
@@ -255,11 +257,40 @@ images
 PilotoCV
 ----------------
 Individual files:
-
+.gitignore
 ProjectoVer1.py
 README-LEEME.txt
+reconocimiento_facial.sql
 registro.php
+requirements.txt
 ----------------
+****************************************************************************
+(added): XAMPP installation instructions with direct cloning of the repository
+********************************************************************************
+Description:
+I personally designed all of this in the XAMPP environment, so for convenience, you can use this guide to run it exactly as I did.
+
+Download XAMPP from https://www.apachefriends.org/download.html
+
+Install it in the default path. It should look like this:
+C:\xampp\
+
+Now, to clone the project in the XAMPP folder, open PowerShell and run script by script:
+
+cd C:\xampp\htdocs
+git clone https://github.com/redsonic28/PilotoCV.git
+cd ProyectoPilotoCV
+
+Database Configuration
+
+Go to XAMPP application, activate both Apache and MySQL now:
+
+1. Open phpMyAdmin from your XAMPP (http://localhost/phpmyadmin).
+
+2. Create a database named: facial_recognition.
+3. Go to the Import tab and select the "facial_recognition.sql" file included in this repository.
+4. Click "Import" and the tables will be created automatically.
+-------------------
 Notes:
 
 This prototype is for demonstration purposes only.
